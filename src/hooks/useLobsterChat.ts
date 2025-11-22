@@ -19,15 +19,24 @@ const LOBSTER_PHRASES = [
 ];
 
 export const useLobsterChat = () => {
-    const [messages, setMessages] = useState<Message[]>([
-        {
-            id: '1',
-            text: "こんにちは！私はAIロブスターです。チョキチョキ！🦞",
-            sender: 'lobster',
-            timestamp: new Date(),
-        },
-    ]);
+    const [messages, setMessages] = useState<Message[]>([]);
     const [isLobsterTyping, setIsLobsterTyping] = useState(false);
+    const initializedRef = useRef(false);
+
+    // クライアント側でのみ初期メッセージを追加（Hydration エラー回避）
+    useEffect(() => {
+        if (!initializedRef.current) {
+            initializedRef.current = true;
+            setMessages([
+                {
+                    id: '1',
+                    text: "こんにちは！私はAIロブスターです。チョキチョキ！🦞",
+                    sender: 'lobster',
+                    timestamp: new Date(),
+                },
+            ]);
+        }
+    }, []);
 
     const sendMessage = async (text: string) => {
         const userMsg: Message = {
