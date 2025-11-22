@@ -8,21 +8,21 @@ export type Message = {
 };
 
 const LOBSTER_PHRASES = [
-    "Pinch pinch! 🦞",
-    "The ocean is vast today.",
-    "Do you like seafood? I hope not!",
-    "Click clack! That's my claw sound.",
-    "I'm just a lobster in a digital world.",
-    "Have you seen any shrimp around here?",
-    "My shell is shiny today, isn't it?",
-    "Bubble bubble...",
+    "チョキチョキ！🦞",
+    "今日の海は広大ですね。",
+    "シーフードは好きですか？そうでないことを祈ります！",
+    "カチカチ！これは私のハサミの音です。",
+    "私はデジタル世界のただのロブスターです。",
+    "この辺りでエビを見かけませんでしたか？",
+    "今日の私の殻は輝いているでしょう？",
+    "ブクブク...",
 ];
 
 export const useLobsterChat = () => {
     const [messages, setMessages] = useState<Message[]>([
         {
             id: '1',
-            text: "Hello! I am the AI Lobster. Pinch pinch! 🦞",
+            text: "こんにちは！私はAIロブスターです。チョキチョキ！🦞",
             sender: 'lobster',
             timestamp: new Date(),
         },

@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "AI Lobster Chat",
-  description: "Chat with an intelligent lobster AI.",
+  title: "AIロブスターチャット",
+  description: "知的なロブスターAIとチャットしましょう。",
 };
 
 export default function RootLayout({
@@ -23,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="ja">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

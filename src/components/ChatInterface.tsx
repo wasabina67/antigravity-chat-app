@@ -30,9 +30,9 @@ export const ChatInterface = () => {
             <header className="flex items-center p-4 bg-ocean-dark text-foreground shadow-md z-10">
                 <LobsterAvatar isTyping={isLobsterTyping} />
                 <div className="ml-4">
-                    <h1 className="text-xl font-bold text-sand">AI Lobster</h1>
+                    <h1 className="text-xl font-bold text-sand">AIロブスター</h1>
                     <p className="text-xs text-ocean-blue-200 opacity-80">
-                        {isLobsterTyping ? 'Swimming...' : 'Online in the deep sea'}
+                        {isLobsterTyping ? '泳いでいます...' : '深海でオンライン'}
                     </p>
                 </div>
             </header>
@@ -46,8 +46,8 @@ export const ChatInterface = () => {
                     >
                         <div
                             className={`max-w-[80%] p-3 rounded-2xl shadow-sm ${msg.sender === 'user'
-                                    ? 'bg-ocean-blue text-white rounded-br-none'
-                                    : 'bg-sand text-ocean-dark rounded-bl-none border border-ocean-light/20'
+                                ? 'bg-ocean-blue text-white rounded-br-none'
+                                : 'bg-sand text-ocean-dark rounded-bl-none border border-ocean-light/20'
                                 }`}
                         >
                             <p className="text-sm md:text-base">{msg.text}</p>
@@ -76,7 +76,7 @@ export const ChatInterface = () => {
                         type="text"
                         value={inputValue}
                         onChange={(e) => setInputValue(e.target.value)}
-                        placeholder="Say something to the lobster..."
+                        placeholder="ロブスターに話しかける..."
                         className="flex-1 bg-transparent px-4 py-2 text-foreground placeholder-ocean-light/50 focus:outline-none"
                     />
                     <button
