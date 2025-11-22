@@ -23,7 +23,6 @@ export const useLobsterChat = () => {
     const [isLobsterTyping, setIsLobsterTyping] = useState(false);
     const initializedRef = useRef(false);
 
-    // クライアント側でのみ初期メッセージを追加（Hydration エラー回避）
     useEffect(() => {
         if (!initializedRef.current) {
             initializedRef.current = true;
