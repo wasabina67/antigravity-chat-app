@@ -10,6 +10,7 @@ const nextConfig: NextConfig = {
    * you may need to set the basePath:
    */
   basePath: '/antigravity-chat-app',
+  assetPrefix: '/antigravity-chat-app',
 };
 
 export default nextConfig;
