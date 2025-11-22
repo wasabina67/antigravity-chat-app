@@ -1,4 +1,4 @@
 1:"$Sreact.fragment"
 2:I[39756,["/antigravity-chat-app/_next/static/chunks/42879de7b8087bc9.js"],"default"]
 3:I[37457,["/antigravity-chat-app/_next/static/chunks/42879de7b8087bc9.js"],"default"]
-0:{"buildId":"B8C2779_YFIw5f6qZ5bMP","rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"loading":null,"isPartial":false}
+0:{"buildId":"E99r08FUDjHm_GU4STmZo","rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"loading":null,"isPartial":false}
